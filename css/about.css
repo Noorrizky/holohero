@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  color: #131417;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.container-new {
+  background-color: #e5e5e5;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.container-new p {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.container-new .animation {
+  height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.container-new .animation > div {
+  animation: text-animation 5s infinite;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-new .animation div div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-new .first div {
+  background-color: #b7b7b7;
+}
+.container-new .second div {
+  background-color: #20a7d8;
+}
+.container-new .third div {
+  background-color: #ffd500;
+}
+
+@keyframes text-animation {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-100%); }
+  40% { transform: translateY(-100%); }
+  60% { transform: translateY(-200%); }
+  80% { transform: translateY(-200%); }
+  100% { transform: translateY(0); }
+}
+
+/* Additional styles for other content */
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container ul li {
+  margin-bottom: 5px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make images circular */
+  object-fit: cover; /* Ensure the image covers the circle */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container img {
+    width: 80%; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .container img {
+    width: 100%; /* Full width for extra small screens */
+  }
+}
