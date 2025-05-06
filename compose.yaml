@@ -4,18 +4,12 @@ services:
     build: .
     ports:
       - "80:80"
-    volumes:
-      - ./db:/var/www/html
     depends_on:
       - db
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: vtuberpoliban
       MYSQL_USER: user
       MYSQL_PASSWORD: password
-    volumes:
-      - db_data:/var/lib/mysql
-volumes:
-  db_data:
