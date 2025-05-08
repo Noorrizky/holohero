@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../config/connection.php');
+include('../config/connection');
 
 // Pagination settings
 $limit = 5; // Number of records per page
@@ -60,10 +60,10 @@ $result = $stmt->get_result();
 <body>
     <div class="container dashboard-container">
         <h2>Admin Dashboard</h2>
-        <!-- <a href="logout.php" class="btn btn-danger">Logout</a> -->
+        <!-- <a href="logout" class="btn btn-danger">Logout</a> -->
         <hr>
         <a href="../clip" class="btn btn-primary">Clip Page</a>
-        <a href="create_video.php" class="btn btn-success">Add New Video</a>
+        <a href="create_video" class="btn btn-success">Add New Video</a>
         <hr>
         <h3>Videos</h3>
         <table class="table table-striped">
@@ -87,7 +87,7 @@ $result = $stmt->get_result();
                             <form method="POST" action="">
                                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                                 <button type="submit" name="delete" class="btn btn-danger">Delete</button>
-                                <a href="edit_video.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="edit_video?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
                             </form>
                         </td>
                     </tr>
