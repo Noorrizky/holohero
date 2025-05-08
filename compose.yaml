@@ -8,6 +8,8 @@ services:
       - .:/var/www/html
     depends_on:
       - db
+    restart: unless-stopped
+
   db:
     image: mysql:5.7
     environment:
@@ -17,6 +19,7 @@ services:
       MYSQL_PASSWORD: password
     volumes:
       - db_data:/var/lib/mysql
+    restart: unless-stopped
 
 volumes:
   db_data:
