@@ -30,13 +30,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item <?php if($active == 'beranda') echo 'active'; ?>">
-            <a class="nav-link" href="index.php">Beranda <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index">Beranda <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item <?php if($active == 'clip') echo 'active'; ?>">
-            <a class="nav-link" href="clip.php">Clip</a>
+            <a class="nav-link" href="clip">Clip</a>
           </li>
           <li class="nav-item <?php if($active == 'about') echo 'active'; ?>">
-            <a class="nav-link" href="about.php">About</a>
+            <a class="nav-link" href="about">About</a>
           </li>
         </ul>
       </div>
