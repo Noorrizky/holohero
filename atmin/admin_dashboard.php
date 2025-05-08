@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../config/connection');
+include('../config/connection.php');
 
 // Pagination settings
 $limit = 5; // Number of records per page
@@ -60,7 +60,7 @@ $result = $stmt->get_result();
 <body>
     <div class="container dashboard-container">
         <h2>Admin Dashboard</h2>
-        <!-- <a href="logout" class="btn btn-danger">Logout</a> -->
+        <!-- <a href="logout.php" class="btn btn-danger">Logout</a> -->
         <hr>
         <a href="../clip" class="btn btn-primary">Clip Page</a>
         <a href="create_video" class="btn btn-success">Add New Video</a>
