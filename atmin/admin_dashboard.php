@@ -62,7 +62,7 @@ $result = $stmt->get_result();
         <h2>Admin Dashboard</h2>
         <!-- <a href="logout.php" class="btn btn-danger">Logout</a> -->
         <hr>
-        <a href="../clip.php" class="btn btn-primary">Clip Page</a>
+        <a href="../clip" class="btn btn-primary">Clip Page</a>
         <a href="create_video.php" class="btn btn-success">Add New Video</a>
         <hr>
         <h3>Videos</h3>
